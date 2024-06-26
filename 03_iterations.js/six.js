@@ -33,3 +33,5 @@ const object = [
 object.forEach( val =>{
     console.log(val.languageName)
 })
+
+
