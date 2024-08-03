@@ -10,6 +10,3 @@ let number = 0;
 let bullean = Boolean(number);
 
 console.log(bullean);
-
-
-
