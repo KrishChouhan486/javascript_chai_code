@@ -144,16 +144,16 @@
 
 // getAllUser();
 
-fetch('https://jsonplaceholder.typicode.com/users')
-    .then(function(response) {
-        return response.json(); // Parse the response as JSON
-    })
-    .then(function(data) {
-        console.log(data); // Log the parsed data (array of users)
-    })
-    .catch(function(error) {
-        console.log('Error:', error); // Log any errors that occur
-    });
+// fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(function(response) {
+//         return response.json();
+//     })
+//     .then(function(data) {
+//         console.log(data); 
+//     })
+//     .catch(function(error) {
+//         console.log('Error:', error); 
+//     });
 
 
 
@@ -161,3 +161,98 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// revise promise fnction
+
+const promiseOne = new Promise(function(resolve,reject){
+
+setTimeout(function(){
+  const error = true;
+    if(!error){
+         resolve({username : "krish"});
+    }
+
+ reject("something wents wrong");
+}, 1000)
+
+})
+promiseOne.then(user=>{
+   
+    return user.username;
+})
+.then(function(username){
+    console.log(username);
+})
+.catch(function(error){
+console.log(error)
+}).finally(function(){
+    console.log("error occur or not it always run the code")
+})
+
+
+
+// const promiseOne = new Promise(function(resolve,reject){
+
+//     setTimeout(function(){
+//       const error = false;
+//         if(!error){
+//              resolve({username : "krish"});
+//         }
+    
+//      reject("something wents wrong");
+//     }, 1000)
+    
+//     })
+//     async function asyncf(){
+//         try{
+//         const response = await promiseOne;
+//         console.log(response)
+//         }
+//         catch{
+//             console.log("this is asyn function");
+//         }
+//     }
+
+// asyncf();
+
+
+// console.log(fetch('https://jsonplaceholder.typicode.com/users'))
+// .then(function(respons){
+// return respons.json();
+// }).then (function(pata){
+//     console.log(pata);
+// }).catch(function(error){
+//     console.log("somtjhing wents wrong",error);
+// })
+
+
+// async function krish(){
+// try
+// {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/users');
+
+//     const data = await response.json();
+//     console.log(data);
+// }
+// catch(error){
+//     console.log("Error", error);
+// }
+    
+// }
+// krish()
