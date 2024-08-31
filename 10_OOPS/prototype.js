@@ -1,18 +1,18 @@
-let myHero = ["papa","mom"];
+// let myHero = ["papa","mom"];
 
 
-const power ={
-    papa : "grandFather",
-    mom : "grandMother",
+// const power ={
+//     papa : "grandFather",
+//     mom : "grandMother",
 
-    getPower : function (){
-        console.assertlog(`this is krish parent ${this.papa}`)
-    }
-}
+//     getPower : function (){
+//         console.assertlog(`this is krish parent ${this.papa}`)
+//     }
+// }
 
-Object.prototype.krish = function (){
-    console.log(`krish is present in al string`)
-}
+// Object.prototype.krish = function (){
+//     console.log(`krish is present in al string`)
+// }
 // power.krish();
 
 // myHero.krish();
